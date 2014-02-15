@@ -161,7 +161,7 @@ class GoogleV3(Geocoder):
             params['language'] = language
 
         if self.premier is False:
-            url = "?".join((self.api, urlencode(params)))
+            url = u"?".join((self.api, urlencode(params)))
         else:
             url = self._get_signed_url(params)
 
